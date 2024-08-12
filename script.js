@@ -67,57 +67,5 @@ document.querySelectorAll('.lightbox-trigger').forEach(function(img) {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll("section");
-  const observerOptions = { threshold: 0.2 };
 
-  const observer = new IntersectionObserver(function (entries, observer) {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active");
 
-        const contents = entry.target.querySelectorAll(".content");
-        contents.forEach((content, index) => {
-          setTimeout(() => content.classList.add("active"), index * 150);
-        });
-
-        // Once active, stop observing to avoid multiple triggers
-        observer.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
-
-  sections.forEach((section) => {
-    observer.observe(section);
-  });
-
-  // Scroll-to-Top Button (Visible based on section observation)
-  const scrollTopBtn = document.createElement("button");
-  scrollTopBtn.id = "scrollTopBtn";
-  scrollTopBtn.textContent = "↑";
-  scrollTopBtn.style.display = "none"; // Hide by default
-  document.body.appendChild(scrollTopBtn);
-
-  // Show the Scroll-to-Top button when the first section is no longer intersecting
-  const firstSection = sections[0];
-  observer.observe(firstSection);
-
-  const topObserver = new IntersectionObserver(
-    function (entries) {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          scrollTopBtn.style.display = "block";
-        } else {
-          scrollTopBtn.style.display = "none";
-        }
-      });
-    },
-    { threshold: 0 }
-  );
-
-  topObserver.observe(firstSection);
-
-  scrollTopBtn.addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-});
