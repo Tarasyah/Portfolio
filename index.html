@@ -35,9 +35,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
   </head>
+
   <body>
     <!-- Top Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark text-white fixed-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark text-white fixed-top text-center"
+    >
       <a class="navbar-brand" href="#">Tarasyah Faz'lin</a>
 
       <!-- Responsive navbar links -->
@@ -45,7 +48,8 @@
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarResponsive"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
         aria-controls="navbarResponsive"
         aria-expanded="false"
         aria-label="Toggle navigation"
@@ -75,7 +79,7 @@
     </nav>
 
     <!-- Side Navbar -->
-    <div class=" side-navbar d-none d-lg-flex flex-column text-center">
+    <div class="side-navbar d-none d-lg-flex flex-column text-center">
       <a href="#hero" class="nav-link">
         <i class="fas fa-home"></i>
       </a>
@@ -94,7 +98,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section id="hero" class="section hero-section">
+    <section id="hero" class="hero-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 text-center">
@@ -121,6 +125,7 @@
                   </span>
                 </span>
               </h2>
+              <br />
               <p>
                 I'm from Depok, Indonesia, and passionate about web
                 technologies. I've been honing my skills in Front-End
@@ -172,7 +177,11 @@
                   RevoU Tech Academy - Learn Data Analytics & Software
                   Development With AI
                 </p>
-                <a href="https://github.com/Kampus-Merdeka-Software-Engineering/km-feb24-medan-11" class="btn btn-primary show-more-btn">Show More</a>
+                <a
+                  href="https://github.com/Kampus-Merdeka-Software-Engineering/km-feb24-medan-11"
+                  class="btn btn-primary show-more-btn"
+                  >Show More</a
+                >
               </div>
             </div>
           </div>
@@ -189,7 +198,11 @@
                 <p class="card-text">
                   Simple web using CSS & HTML For Coursera CSS Capstone Project
                 </p>
-                <a href="https://tarasyah.github.io/Simple-Anime-Website/" class="btn btn-primary show-more-btn">Show More</a>
+                <a
+                  href="https://tarasyah.github.io/Simple-Anime-Website/"
+                  class="btn btn-primary show-more-btn"
+                  >Show More</a
+                >
               </div>
             </div>
           </div>
@@ -274,6 +287,7 @@
                   src="img/Coursera_HTML.jpg"
                   class="card-img-top lightbox-trigger"
                   alt="Coursera HTML"
+                  loading="lazy"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Coursera HTML</h5>
@@ -287,6 +301,7 @@
                   src="img/Coursera_CSS.jpg"
                   class="card-img-top lightbox-trigger"
                   alt="Coursera CSS"
+                  loading="lazy"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Coursera CSS</h5>
@@ -300,6 +315,7 @@
                   src="img/Coursera_Interactivity_Javascript.jpg"
                   class="card-img-top lightbox-trigger"
                   alt="Coursera Interactivity Javascript"
+                  loading="lazy"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Coursera Interactivity Javascript</h5>
@@ -313,6 +329,7 @@
                   src="img/Coursera_RWD_page-0001.jpg"
                   class="card-img-top lightbox-trigger"
                   alt="Coursera Responsive Web Design"
+                  loading="lazy"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Responsive Web Design</h5>
@@ -326,6 +343,7 @@
                   src="img/Coursera_Web_Design_for_Everybody_Capstone_page-0001.jpg"
                   class="card-img-top lightbox-trigger"
                   alt="Coursera Web Design for Everybody Capstone"
+                  loading="lazy"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Web Design for Everybody Capstone</h5>
@@ -339,6 +357,7 @@
                   src="img/Learning_How_to_Learn_Certificate_page-0001.jpg"
                   class="card-img-top lightbox-trigger"
                   alt="Coursera Learning How to Learn"
+                  loading="lazy"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Learning How to Learn</h5>
@@ -352,6 +371,7 @@
                   src="img/tarasyah-fazlin-certificate-REVOU.jpg"
                   class="card-img-top lightbox-trigger"
                   alt="Learn Data Analytics & Software Development With AI"
+                  loading="lazy"
                 />
                 <div class="card-body">
                   <h5 class="card-title">
@@ -385,43 +405,74 @@
       </div>
     </section>
 
-<!-- Contact Me Section -->
-<section id="contact" class="section text-light">
-    <div class="container">
+    <!-- Contact Me Section -->
+    <section id="contact" class="section text-light">
+      <div class="container">
         <div class="row text-center mb-4">
-            <div class="col">
-                <h2>Contact <span class="text-blue">Me</span></h2>
-            </div>
+          <div class="col">
+            <h2>Contact <span class="text-blue">Me</span></h2>
+          </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-5">
-                <form>
-                    <div class="mb-3">
-                        <input type="text" class="form-control form-control-lg" id="name" placeholder="Full Name" required />
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control form-control-lg" id="email" placeholder="Email" required />
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control form-control-lg" id="phone" placeholder="Phone Number" required />
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control form-control-lg" id="subject" placeholder="Subject" required />
-                    </div>
-                </form>
+          <div class="col-md-5">
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="name"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="phone"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  id="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="col-md-5">
+            <div class="mb-3">
+              <textarea
+                class="form-control form-control-lg"
+                placeholder="Your Message"
+                id="message"
+                style="height: 210px"
+                required
+              ></textarea>
             </div>
-            <div class="col-md-5">
-                <div class="mb-3">
-                    <textarea class="form-control form-control-lg" placeholder="Your Message" id="message" style="height: 210px;" required></textarea>
-                </div>
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
-                </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">
+                Send Message
+              </button>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="py-3 text-white text-center">
@@ -447,8 +498,66 @@
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      // Function to handle adding the 'visible' class when a section is in view
+      function onScroll() {
+        document.querySelectorAll(".section").forEach((section) => {
+          const rect = section.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            section.classList.add("visible");
+          }
+        });
+      }
+
+      // Run on scroll and on load
+      window.addEventListener("scroll", onScroll);
+      window.addEventListener("load", onScroll);
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var navbarCollapse = document.querySelector("#navbarResponsive");
+        var navLinks = document.querySelectorAll(".nav-link");
+
+        // Collapse the navbar when a link is clicked
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", function () {
+            if (navbarCollapse.classList.contains("show")) {
+              var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false,
+              });
+              bsCollapse.hide();
+            }
+          });
+        });
+      });
+    </script>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var navbarCollapse = document.querySelector('#navbarResponsive');
+          var navbarToggler = document.querySelector('.navbar-toggler');
+
+          // Toggle the navbar when the toggler is clicked
+          navbarToggler.addEventListener('click', function () {
+            if (navbarCollapse.classList.contains('show')) {
+              bootstrap.Collapse.getInstance(navbarCollapse).hide();
+            } else {
+              bootstrap.Collapse.getInstance(navbarCollapse).show();
+            }
+          });
+        });
+    </script>
   </body>
 </html>
